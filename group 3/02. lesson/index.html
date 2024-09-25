@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elte-fi/www-assets@19.10.16/styles/mdss.min.css">
+    <title>Tasks</title>
+    <style>
+        .task {
+            display: none;
+        }
+        /* Highlight the style of the current task */
+        .current {
+            background-color: #f0f0f0;
+            display: block;
+            padding: 15px;
+        }
+        th {
+            font-weight: 900 !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript DOM Manipulation</h1>
+
+    <ul>
+        <li><a href="#task1">Task 1: Hello World!</a></li>
+        <li><a href="#task2">Task 2: Repeating Hello World</a></li>
+        <li><a href="#task3">Task 3: Calculate Circle Perimeter</a></li>
+        <li><a href="#task4">Task 4: List Hyperlinks</a></li>
+        <li><a href="#task5">Task 5: Display Image by URL</a></li>
+        <li><a href="#task6">Task 6: Update Table</a></li>
+        <li><a href="#task7">Task 7: List Books by Year</a></li>
+        <li><a href="#task8">Task 8: Books by Publisher</a></li>
+        <li><a href="#task9">Task 9: Counter Component</a></li>
+        <li><a href="#task10">Task 10: Guess the Number</a></li>
+    </ul>
+
+    <!-- Task 1: Hello World! -->
+    <div id="task1" class="task current">
+        <h3>Task 1: Hello World!</h3>
+        <p>On button click, write "Hello World!" to the element with the 'helloText' id!</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button>Say Hello</button>
+        <h3 id="helloText"></h3>
+    </div>
+
+    <!-- Task 2: Repeating Hello World -->
+    <div id="task2" class="task">
+        <h3>Task 2: Repeating Hello World</h3>
+        <p>Enter a number and display the "Hello World!" text that many times with increasing font sizes! (text input field, button)</p>
+        <input type="number" id="repeatInput" placeholder="Number of repeats">
+        <button>Go</button>
+        <div id="helloRepeats"></div>
+    </div>
+
+    <!-- Task 3: Calculate Circle Perimeter -->
+    <div id="task3" class="task">
+        <h3>Task 3: Calculate Circle Perimeter</h3>
+        <p>Write a program to calculate the perimeter of a circle!</p>
+        <input type="number" id="radiusInput" placeholder="Circle radius">
+        <button>Calculate</button>
+        <p id="circleResult"></p>
+    </div>
+
+    <!-- Task 4: List Hyperlinks -->
+    <div id="task4" class="task">
+        <h3>Task 4: List Hyperlinks</h3>
+        <p>List all the hyperlinks' addresses on the page when it loads!</p>
+        <a href="http://www.elte.hu">ELTE</a>
+        <a href="http://webprogramozas.inf.elte.hu">Web Programming at ELTE</a>
+        <a href="http://www.inf.elte.hu">ELTE Faculty of Informatics</a>
+        <ul id="hyperlinksList">
+          
+        </ul>
+    </div>
+
+    <!-- Task 5: Display Image by URL -->
+    <div id="task5" class="task">
+        <h3>Task 5: Display Image by URL</h3>
+        <p>Provide a text input field to enter an internet-accessible image URL. Click a button next to it to display the image in the document!</p>
+        <input type="text" id="imageUrlInput" placeholder="Image URL">
+        <button>Show</button>
+        <div id="imageContainer"></div>
+    </div>
+
+    <!-- Task 6: Update Table -->
+    <div id="task6" class="task">
+        <h3>Task 6: Update Table</h3>
+        <p>There is a table with three columns! Above the table, there are three text input fields and a button. Clicking the button should insert the values from the three input fields as a new row in the table. You can find the base list for the table in the script.</p>
+        <input type="text" id="input1" placeholder="Value 1">
+        <input type="text" id="input2" placeholder="Value 2">
+        <input type="text" id="input3" placeholder="Value 3">
+        <button>Update</button>
+        <table id="dataTable">
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="task7" class="task">
+        <h3>Task 7: List Books by Year</h3>
+        <p>Input a year and list book titles published in that year! You can find the list of books for this task in the script!</p>
+        <label for="year">Enter the year:</label>
+        <input type="number" id="year">
+        <button>List</button>
+        <ul id="booksByYear"></ul>
+    </div>
+
+    <div id="task8" class="task">
+        <h3>Task 8: Books by Publisher</h3>
+        <p>Create a dropdown menu listing different publishers. Clicking a button should display books associated with the selected publisher in a tabular format!</p>
+        <label for="publisher">Select a publisher:</label>
+        <select id="publisher">
+            <option value="publisher1">Publisher 1</option>
+            <option value="publisher2">Publisher 2</option>
+            <option value="publisher3">Publisher 3</option>
+        </select>
+        <button>List</button>
+        <table id="booksByPublisher">
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Publication Year</th>
+                <th>ISBN</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="task9" class="task">
+        <h3>Task 9: Counter Component</h3>
+        <p>Create a counter component!<br>
+            a. The counter consists of a read-only text input field and two buttons (plus and minus)! Clicking the buttons should increase or decrease the number in the text input field by one.<br>
+            b. Define a minimum and maximum value in the script! If the counter reaches either value, the corresponding button should be disabled!<br>
+            c. *If the button is held down, the counter should automatically start changing the value.</p>
+        <input type="text" id="counterValue" readonly>
+        <button id="inc">+</button>
+        <button id="dec">-</button>
+    </div>
+
+    <div id="task10" class="task">
+        <h3>Task 10: Guess the Number</h3>
+        <p>The computer is thinking of a number! Our task is to guess it. Provide the ability to guess the number, and the computer will respond whether its number is smaller or larger than our guess. Use the Math.random() function for generating a random number and Math.floor() for rounding!</p>
+        <label for="guess">Guess:</label>
+        <input type="number" id="guess">
+        <button>Guess</button>
+        <p id="guessResult"></p>
+        <ul id="guessList"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
