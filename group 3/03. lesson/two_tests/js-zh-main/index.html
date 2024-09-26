@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Group Exam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elte-fi/www-assets@19.10.16/styles/mdss.min.css">
+</head>
+<body>
+<h1>JavaScript Group Exam</h1>
+<div id="task1">
+    <h3 class="answer">Answer1: </h3>
+    <h3 class="answer">Answer2: </h3>
+    <h3 class="answer">Answer3: </h3>
+    <h3 class="answer">Answer4: </h3>
+</div>
+<div id="task2">
+    <h2>Adjusting Square Size</h2>
+    Height<input type="range" id="height" class="size" max="100" min="0">
+    Width<input type="range" id="width" class="size" max="100" min="0">
+    Color<input type="color" id="color">
+    <div style="background-color: #008000; height: 100px; width:100px"></div>
+</div>
+<script>
+    // TASK 1
+    const subjects = [
+        {
+            code: "IP-18cAB2E",
+            name: "Databases II. L.",
+            creditValue: 2,
+            field: "informatics",
+            prerequisites: [{code: "IP-18cAB2G", level: "weak"}] // előfeltételek
+        },
+        {
+            code: "IP-18cAB2G",
+            name: "Databases II. Pr.",
+            creditValue: 3,
+            field: "informatics",
+            prerequisites: [{code: "IP-18cAB1E", level: "strong"}]
+        },
+        {
+            code: "IP-18MIAE",
+            name: "Artificial intelligence",
+            creditValue: 3,
+            field: "computing_science",
+            prerequisites: [{code: "IP-18cAB1E", level: "strong"}, {code: "IP-18AA2E", level: "weak"}]
+        },
+        {
+            code: "IP-18KPROGEG",
+            name: "Concurent programming L+Pr.",
+            creditValue: 3,
+            field: "informatics",
+            prerequisites: [{code: "IP-18PNYEG", level: "strong"}]
+        },
+        {
+            code: "IP-18KVIBDAG",
+            name: "Big Data Architectures and Analytics",
+            creditValue: 3,
+            field: "informatics",
+            prerequisites: [{code: "IP-18OEPROGEG", level: "strong"}, {code: "IP-18PNYEG", level: "strong"}]
+        },
+        {
+            code: "IP-18cSZAMÉA2G",
+            name: "Fundamentals of theory of computation II. Pr.",
+            creditValue: 3,
+            field: "computing_science",
+            prerequisites: [{code: "IP-18cAB1E", level: "strong"}]
+        },
+        {
+            code: "IP-18cSZAMÉA2E",
+            name: "Fundamentals of theory of computation II. L.",
+            creditValue: 2,
+            field: "computing_science",
+            prerequisites: [{code: "IP-18cSZAMÉA2G", level: "weak"}]
+        },
+        {
+            code: "IP-18KVSZBGTE",
+            name: "Introduction to machine learning",
+            creditValue: 2,
+            field: "computing_science",
+            prerequisites: [{code: "IP-18MATAG", level: "strong"}]
+        },
+        {
+            code: "IP-18cVSZG",
+            name: "Probability and statistics",
+            creditValue: 3,
+            field: "mathematics",
+            prerequisites: [{code: "IP-18cAN2E", level: "strong"}]
+        },
+        {
+            code: "IP-18KVPYEG",
+            name: "Python",
+            creditValue: 5,
+            field: "informatics",
+            prerequisites: []
+        }
+    ];
+
+    //TASK1.1
+    const outputs = document.querySelectorAll('.answer')
+    outputs[0].innerHTML += subjects.filter(sub => sub.prerequisites.length === 0)[0].name
+
+    //TASK1.2
+
+    outputs[1].innerHTML += subjects.some(e=> e.prerequisites.length === 0 && e.creditValue === 5) ? "Yes, there is" : "No, there isn't"
+
+    // TASK1.3 
+    outputs[2].innerHTML += subjects.reduce((p,n) => p+n.creditValue,0)
+
+    // TASK1.4
+
+    outputs[3].innerHTML += subjects.filter(e => e.field == "informatics").map(e=> e.name)
+
+    // TASK 2
+    const height = document.querySelector('#height')
+    const color = document.querySelector('#color')
+    const width = document.querySelector('#width')
+    const div = document.querySelector('#task2 div')
+    height.value = 100
+    width.value = 100
+    color.value = "#008000"
+
+    height.addEventListener('input', (e)=> {
+        console.log(div, e.target)
+        div.style.height = `${e.target.value}px`
+    })
+
+    width.addEventListener('input', (e)=> {
+        console.log(div, e.target)
+        div.style.width = `${e.target.value}px`
+    })
+
+    color.addEventListener('input', (e)=> {
+        console.log(div, e.target)
+        div.style.backgroundColor = `${e.target.value}`
+    })
+
+</script>
+</body>
+</html>
