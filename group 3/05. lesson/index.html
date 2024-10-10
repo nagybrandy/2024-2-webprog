@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="synthwave">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu" class="bg-base-300 w-2/3 mx-auto rounded-xl overflow-hidden mt-5 max-w-[600px]">
+        <h1 class="bg-primary text-primary-content font-bold text-3xl p-2 text-center">PixelArt</h1>
+        <div class="p-5 space-y-5 align-middle">
+            <input type="text" value="Bendi" placeholder="Put your name here!" class="input input-bordered w-full" />
+            <input type="number" value="7" placeholder="Put the size of the table here!" min="3" max="12"
+                class="input input-bordered w-full" />
+            <button class="btn btn-primary w-full">Start Game</button>
+            <button class="btn btn-link w-full">Game rules</button>
+            <div id='rules' class="text-center">🖌️🖌️🖌️🖌️🖌️</div>
+        </div>
+    </div>
+    <div id="playScreen" class="bg-base-300 w-2/3 mx-auto rounded-xl overflow-hidden mt-5 max-w-[600px]">
+        <h1 class="bg-primary text-primary-content font-bold text-3xl p-2 text-center">PixelArt</h1>
+        <div class="p-5 space-y-5 flex flex-col items-center justify-center">
+            <span class="text-right font-bold text-lg">Timer: 0 seconds</span>
+            <input type="color" name="" id="" class="w-16 mx-auto">
+            <table class="mx-auto">
+
+            </table>
+            <button class="btn btn-link w-full">Back to the Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
