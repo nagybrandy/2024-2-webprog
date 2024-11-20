@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Blue cheese",
+        "type": "moldy",
+        "origin": "it",
+        "age_m": 6
+    },
+    {
+        "name": "Brie cheese",
+        "type": "white",
+        "origin": "fr",
+        "age_m": 36
+    },
+    {
+        "name": "Feta cheese",
+        "type": "white",
+        "origin": "gr",
+        "age_m": 3
+    }
+]

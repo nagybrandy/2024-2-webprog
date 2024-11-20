@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #383838;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('img/bg.png'); /* Háttérkép */
+    background-size:10%;
+    color: #383838; /* Fekete szöveg */
+}
+
+body {
+    background-color: #fff3af; /* Sárga alapszín */
+    margin: 30px;
+    border-radius: 5px;backdrop-filter: blur(5px);
+    z-index: 1;
+    padding: 30px;
+    width: 60%;
+    height: 80%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff; /* Fehér háttér */
+    border: 0px;
+    border-radius: 4px; /* Sarkok kerekítése */
+    overflow: hidden; /* Átfedés elrejtése */
+}
+
+th, td {
+    border: 0px solid #000; /* Fekete szegély */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #FFA500; /* Narancssárga fejléc */
+}
+
+tr:nth-child(even) {
+    background-color: #fff8dc; /* Világosabb sárga sorok */
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+#results {
+    margin-top: 30px;
+}
+#results > ul#errors {
+    margin-left: 30px;
+    color:red;
+}
+h4 {
+    margin-top: 10px;
+}
+
+ul#help {
+    margin-top: 30px;
+}
+ul#help a {
+    text-align: left;
+    margin:0;
+}
+
+.old {
+    background-color: rgb(222, 185, 185) !important;
+    font-style: italic;
+}

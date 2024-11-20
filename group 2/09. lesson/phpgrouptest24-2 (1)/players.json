@@ -1,0 +1,139 @@
+[
+    {
+        "name": "John Smith",
+        "positions": [
+            "Striker"
+        ],
+        "goals2024": 12,
+        "goals2023": 14,
+        "img": "batorini"
+    },
+    {
+        "name": "Carlos Diaz",
+        "positions": [
+            "Midfielder",
+            "Defender"
+        ],
+        "goals2024": 5,
+        "goals2023": 3,
+        "img": "benke"
+    },
+    {
+        "name": "Amir Rajan",
+        "positions": [
+            "Midfielder"
+        ],
+        "goals2024": 8,
+        "goals2023": 10,
+        "img": "carlaise"
+    },
+    {
+        "name": "Sofia Loren",
+        "positions": [
+            "Goalkeeper"
+        ],
+        "goals2024": 0,
+        "goals2023": 0,
+        "img": "rataka"
+    },
+    {
+        "name": "Xiao Ming",
+        "positions": [
+            "Striker",
+            "Winger"
+        ],
+        "goals2024": 20,
+        "goals2023": 22,
+        "img": "layka"
+    },
+    {
+        "name": "Aleksandr Petrov",
+        "positions": [
+            "LeftBack"
+        ],
+        "goals2024": 2,
+        "goals2023": 1,
+        "img": "doggo"
+    },
+    {
+        "name": "Sarah Connor",
+        "positions": [
+            "Striker",
+            "Midfielder"
+        ],
+        "goals2024": 15,
+        "goals2023": 18,
+        "img": "dace"
+    },
+    {
+        "name": "Lee Chan",
+        "positions": [
+            "Midfielder"
+        ],
+        "goals2024": 11,
+        "goals2023": 13,
+        "img": "held"
+    },
+    {
+        "name": "Emanuel Blanc",
+        "positions": [
+            "Rightback",
+            "Midfielder",
+            "LeftBack"
+        ],
+        "goals2024": 6,
+        "goals2023": 4,
+        "img": "grunwald"
+    },
+    {
+        "name": "Mohammed Al-Sayed",
+        "positions": [
+            "Striker"
+        ],
+        "goals2024": 17,
+        "goals2023": 19,
+        "img": "kiss"
+    },
+    {
+        "name": "Lucy Heart",
+        "positions": [
+            "Defender"
+        ],
+        "goals2024": 3,
+        "goals2023": 2,
+        "img": "svab"
+    },
+    {
+        "name": "Bendi",
+        "goals2024": "2022",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "svab"
+    },
+    {
+        "name": "m4zrl5",
+        "goals2024": "2002",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "kiss"
+    },
+    {
+        "name": "marci",
+        "goals2024": "22",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "benke"
+    }
+]

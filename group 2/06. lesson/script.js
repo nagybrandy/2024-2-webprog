@@ -1,4 +1,9 @@
-
+const obj = {
+    name: "Bendi",
+    score: 7
+}
+localStorage.setItem('group2', JSON.stringify(obj))
+console.log(JSON.parse(localStorage.getItem('group2')))
 // VARIABLES, STATES
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
