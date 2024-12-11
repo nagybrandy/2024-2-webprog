@@ -1,0 +1,123 @@
+#banknotes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    justify-items: center;
+}
+
+#banknotes img {
+    height: 4em;
+    width: 8em;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    justify-items: center;
+}
+
+#money {
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#transfer {
+    text-align: center;
+}
+
+#amount {
+    font-weight: 700;
+    color: green;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #999999;
+    padding: 4px;
+}
+
+.overpaid {
+    background-color: lightpink;
+    color: red;   
+}
+
+table img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+table tr:nth-child(1) td {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Ink Free', 'Segoe Script', cursive;
+    font-weight: bold;
+}
+
+table tr:nth-child(2) td {
+    padding: 10px;
+}
+
+table tr:nth-child(3) td {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+table tr:nth-child(3) td::after {
+    content: " Ft";
+}
+
+table tr:nth-child(4) td {
+    font-size: 0.8em;
+    text-align: center;
+    font-style: oblique;
+    color: #999999;
+}
+
+table tr:nth-child(4) td::before {
+    content: "(";
+}
+
+table tr:nth-child(4) td::after {
+    content: " Ft)";
+}
+
+select, button {
+    margin: auto;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--clr-highlight);
+    color: var(--clr-white);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+select:hover, button:hover {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+select:active, button:active {
+    filter: brightness(90%);
+}
+
+img {
+    transition: 0.25s ease;
+    transform-origin: 50% 50%;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

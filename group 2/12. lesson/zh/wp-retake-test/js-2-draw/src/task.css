@@ -1,0 +1,16 @@
+#content > * {
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    background-image: url('../img/studio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: auto;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}

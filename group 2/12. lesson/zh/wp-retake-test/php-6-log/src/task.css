@@ -1,0 +1,125 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: var(--clr-dark);
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--clr-secondary);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#7a8174" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: var(--clr-main);
+    color: var(--clr-light);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--clr-highlight);
+}
+
+/* Additional styling for better visual consistency */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: var(--clr-highlight);
+    box-shadow: 0 0 5px rgba(0, 140, 149, 0.5);
+}
+
+#error img, #success img {
+    max-width: 500px;
+    border-radius: 25px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#testing {
+    background-color: var(--clr-light);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 70vw;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add these styles for table formatting */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--clr-secondary);
+}
+
+thead {
+    background-color: var(--clr-main);
+    color: var(--clr-light);
+}
+
+#achievements thead th:nth-child(3) {
+    width: 60%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--clr-light);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--clr-white);
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkred;
+}
