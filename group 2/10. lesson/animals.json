@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Lion",
+        "species_code": "LIO123",
+        "age": 3,
+        "background": ".\/img\/savannah.webp"
+    },
+    {
+        "name": "Penguin",
+        "species_code": "PEN232",
+        "age": 1,
+        "background": ".\/img\/antarctica.webp"
+    },
+    {
+        "name": "Monkey",
+        "species_code": "MON123",
+        "age": 3,
+        "background": ".\/img\/forest.webp"
+    },
+    {
+        "name": "Dolphin",
+        "species_code": "DOL456",
+        "age": 7,
+        "background": ".\/img\/ocean.webp"
+    },
+    {
+        "name": "Elephant",
+        "species_code": "ELE789",
+        "age": 10,
+        "background": ".\/img\/savannah.webp"
+    },
+    {
+        "name": "Polar Bear",
+        "species_code": "POL101",
+        "age": 5,
+        "background": ".\/img\/antarctica.webp"
+    },
+    {
+        "name": "Tiger",
+        "species_code": "TIG102",
+        "age": 4,
+        "background": ".\/img\/forest.webp"
+    },
+    {
+        "name": "Shark",
+        "species_code": "SHA567",
+        "age": 8,
+        "background": ".\/img\/ocean.webp"
+    },
+    {
+        "name": "Mouse",
+        "species_code": "MOU123",
+        "age": 1,
+        "background": ".\/img\/savannah.webp"
+    },
+    {
+        "name": "Slother",
+        "species_code": "SLO456",
+        "age": 10,
+        "background": ".\/img\/forest.webp"
+    },
+    {
+        "name": "Chicken",
+        "species_code": "CHI333",
+        "age": 2,
+        "background": ".\/img\/savannah.webp"
+    },
+    {
+        "name": "Snake",
+        "species_code": "SNA999",
+        "age": 15,
+        "background": ".\/img\/forest.webp"
+    },
+    {
+        "name": "Seal",
+        "species_code": "SEA222",
+        "age": 6,
+        "background": ".\/img\/antarctica.webp"
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "username": "admin",
+        "password": "admin",
+        "email": "admin@admin.com"
+    },
+    {
+        "username": "bebe",
+        "email": "",
+        "password": "bebe",
+        "confirm_password": ""
+    },
+    {
+        "username": "bebe",
+        "email": "",
+        "password": "bebe",
+        "confirm_password": ""
+    },
+    {
+        "username": "bebe",
+        "email": "asd@asd.hu",
+        "password": "asd",
+        "confirm_password": "asd"
+    },
+    {
+        "username": "poli",
+        "email": "poli@poli.hu",
+        "password": "poli",
+        "confirm_password": "poli"
+    },
+    {
+        "username": "poli",
+        "email": "asd@asd.hu",
+        "password": "poli",
+        "confirm_password": "asd"
+    },
+    {
+        "username": "admin",
+        "email": "asd@asd.hu",
+        "password": "admin",
+        "confirm_password": "asd"
+    },
+    {
+        "username": "admin",
+        "email": "asd@asd.hu",
+        "password": "admin",
+        "confirm_password": "asd"
+    },
+    {
+        "username": "new",
+        "email": "new@new.hu",
+        "password": "new",
+        "confirm_password": "new"
+    }
+]
